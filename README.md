@@ -12,8 +12,7 @@ HangDev is a modern, developer-themed take on the classic Hangman game. Your mis
 
 ## Demo
 
-👉 **[Live Demo (Vercel/Netlify/GitHub Pages)](https://cosminmrotaru-hangdev-demo.vercel.app/)**  
-*(Replace this link with your actual deployed demo!)*
+👉 **[Live Demo (Netlify)](https://hangdevrmc.netlify.app/)**  
 
 ![HangDev Screenshot](./screenshots/hangdev-demo.png)
 
@@ -106,4 +105,4 @@ Cosmin M. Rotaru
 
 ## License
 
-This project is open-source, MIT licensed – use it as you wish!
+MIT
