@@ -354,98 +354,101 @@ body.light-theme .control-bar select {
     color: #222;
 }
 
-@media (max-width: 700px) {
-  body {
-    min-height: 100vh;
-    background: var(--clr-bg, #19191b);
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
-  }
-
-  #root {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    align-items: stretch;
-  }
-
-  main, .game-container {
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+@media (max-width: 650px) {
+  html, body {
     min-height: 100vh;
     width: 100vw;
-    padding: 7vw 0 7vw 0;
+    padding: 0;
+    margin: 0;
+    background: var(--clr-bg, #18191c);
+    overflow-x: hidden;
+    font-size: 16px;
+  }
+
+  #root, main, .game-container {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
   }
 
-  h1, h2, h3, .game-title {
+  .app-title, h1, h2, h3 {
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 2vw;
-    margin-top: 1vw;
+    margin: 2vw 0 3vw 0;
     letter-spacing: 0.02em;
   }
 
-  section.game-status {
-    font-size: 1.18rem;
-    max-width: 98vw;
-    margin: 5vw 0 8vw 0;
-    padding: 10px 2vw;
-    border-radius: 8px;
-  }
-
   .chips-row, .chips {
-    flex-wrap: wrap;
+    width: 100vw;
     justify-content: center;
-    margin-bottom: 6vw;
-    gap: 7px;
+    gap: 6px;
+    margin-bottom: 5vw;
+    flex-wrap: wrap;
   }
-
   .chip {
     font-size: 1rem;
     padding: 7px 14px;
-    border-radius: 6px;
-    margin-bottom: 5px;
+    border-radius: 7px;
+    margin-bottom: 6px;
+  }
+
+  .svg-hangman,
+  .hangman-img,
+  .hangman-canvas {
+    max-width: 78vw;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 18px auto;
+    display: block;
+  }
+
+  .game-status {
+    width: 92vw;
+    max-width: 99vw;
+    margin: 18px auto 16px auto;
+    font-size: 1.15rem;
+    padding: 10px 4vw;
+    border-radius: 8px;
+    text-align: center;
   }
 
   .word-row, .word-letters {
     display: flex;
     justify-content: center;
-    gap: 6px;
-    margin-bottom: 24px;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
     flex-wrap: wrap;
-    width: 100%;
+    width: 97vw;
   }
-
   .word-letter {
     height: 54px;
     width: 54px;
     font-size: 2rem;
-    border-radius: 5px;
+    border-radius: 6px;
     margin: 0 2px;
   }
 
-  section.keyboard {
+  .keyboard, section.keyboard {
     display: flex;
     flex-wrap: wrap;
-    gap: 4px;
     justify-content: center;
+    gap: 5px;
     max-width: 99vw;
-    margin-bottom: 40px;
-    margin-top: 12px;
+    width: 99vw;
+    margin: 0 auto 24px auto;
   }
-
   button.key {
-    font-size: 1.35rem;
-    padding: 10px 0;
-    min-width: 42px;
-    min-height: 42px;
+    font-size: 1.38rem;
+    padding: 12px 0;
+    min-width: 43px;
+    min-height: 43px;
     border-radius: 8px;
   }
 
@@ -455,34 +458,25 @@ body.light-theme .control-bar select {
 
   button.new-game {
     padding: 13px 28px;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     border-radius: 8px;
     margin-top: 18px;
   }
 
-  .svg-hangman,
-  .hangman-img,
-  .hangman-canvas {
-    max-width: 66vw;
-    width: 100%;
-    height: auto;
-    margin: 0 auto 18px auto;
-    display: block;
+  .footer, .app-footer {
+    font-size: 0.99rem;
+    padding: 18px 4vw 24px 4vw;
+    text-align: center;
+    margin-top: 18px;
   }
 
-  .footer, .app-footer {
-    font-size: 0.98rem;
-    padding: 18px 4vw;
-    text-align: center;
-  }
-    
   .theme-toggle, .mode-switch {
     position: fixed;
-    top: 12px;
-    right: 12px;
+    top: 11px;
+    right: 11px;
     z-index: 10;
-    font-size: 1.2rem;
-    padding: 7px 15px;
+    font-size: 1.1rem;
+    padding: 8px 18px;
     border-radius: 22px;
   }
 }
