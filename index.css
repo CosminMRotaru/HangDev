@@ -435,14 +435,17 @@ body.light-theme .control-bar select {
     margin: 0 2px;
   }
 
-  .keyboard, section.keyboard {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
-    max-width: 99vw;
-    width: 99vw;
-    margin: 0 auto 24px auto;
+   .keyboard, section.keyboard {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 5px;
+     width: 100%;
+     max-width: 500px;
+     margin: 0 auto 24px auto;
+     padding-left: 3vw;
+      padding-right: 3vw;
+      box-sizing: border-box;
   }
   button.key {
     font-size: 1.38rem;
